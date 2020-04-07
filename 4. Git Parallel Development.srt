@@ -1,0 +1,2383 @@
+1
+00:00:00,420 --> 00:00:08,850
+Hello and welcome to this video in this YouTube video you're going to learn about great parallel development.
+
+2
+00:00:08,850 --> 00:00:12,470
+So first we need to learn about the branching operation.
+
+3
+00:00:12,870 --> 00:00:19,570
+So we use branches as pointers to our comets or snapshots.
+
+4
+00:00:19,590 --> 00:00:26,100
+Remember what I told you about comets when we create a comet we are actually creating a snapshot of
+
+5
+00:00:26,100 --> 00:00:31,590
+our project and that snapshot is going to contain all of the updated codes.
+
+6
+00:00:31,710 --> 00:00:35,120
+Our project but it is actually the updated project.
+
+7
+00:00:35,250 --> 00:00:41,350
+So that is going to be our comet or in other words our snapshots of our project.
+
+8
+00:00:41,410 --> 00:00:47,140
+So we have our main branch that is also called the master branch.
+
+9
+00:00:47,200 --> 00:00:55,600
+So remember when we were actually entering our bash coats in our terminal Terminal application or inside
+
+10
+00:00:55,600 --> 00:01:00,620
+the bash application we entered the origin master.
+
+11
+00:01:01,060 --> 00:01:04,760
+There we were actually referring to the master branch.
+
+12
+00:01:04,810 --> 00:01:11,290
+So the master branch is actually your main project your main code.
+
+13
+00:01:11,380 --> 00:01:15,860
+First we have the main branch or the main project.
+
+14
+00:01:15,880 --> 00:01:21,150
+Next we have something called working on a new feature.
+
+15
+00:01:21,430 --> 00:01:31,580
+So for example you are working on a chat application and you want to add up for example voice chat feature
+
+16
+00:01:32,150 --> 00:01:33,440
+to your app.
+
+17
+00:01:33,530 --> 00:01:39,790
+So in that case this means that you want to add a new feature to your application.
+
+18
+00:01:39,880 --> 00:01:45,700
+And in this case we recommend that you do not mess up with the main branch that is going to be your
+
+19
+00:01:45,700 --> 00:01:53,350
+main project because you want to add a new feature and this feature can cause a little bit of problems.
+
+20
+00:01:53,350 --> 00:01:57,140
+Or maybe it can cause a buck inside the main project.
+
+21
+00:01:57,370 --> 00:02:04,720
+So first you want to make sure that this feature works perfectly and then you want to add this project.
+
+22
+00:02:04,810 --> 00:02:08,190
+Is this a new feature to your main branch.
+
+23
+00:02:08,290 --> 00:02:19,200
+So in this case we are going to create a new branch in order to work on the project that is called parallel
+
+24
+00:02:19,200 --> 00:02:20,450
+development.
+
+25
+00:02:20,610 --> 00:02:24,140
+So we have two branches which is fine.
+
+26
+00:02:24,150 --> 00:02:25,750
+The first one is the main branch.
+
+27
+00:02:25,950 --> 00:02:33,710
+The second branch is also our main project our project but we want to add a new feature to the project.
+
+28
+00:02:33,720 --> 00:02:40,930
+So in this case we are going to use the parallel development in order to work on the new branch and
+
+29
+00:02:41,160 --> 00:02:41,990
+the new feature.
+
+30
+00:02:42,000 --> 00:02:47,790
+And then when it works fine and we know that it works perfectly we are going to add this feature to
+
+31
+00:02:47,790 --> 00:02:48,900
+the main branch.
+
+32
+00:02:48,930 --> 00:02:54,100
+So in this case we do not mess up with the main branch or the autogen mass there.
+
+33
+00:02:54,150 --> 00:02:59,840
+So we create our new plant from a comet or snapshot.
+
+34
+00:02:59,880 --> 00:03:02,900
+So remember what they told you about comets.
+
+35
+00:03:02,910 --> 00:03:03,390
+Right.
+
+36
+00:03:03,420 --> 00:03:07,110
+We create a climate and or a snapshot.
+
+37
+00:03:07,230 --> 00:03:12,400
+So if we create a new branch there in order to add the new feature.
+
+38
+00:03:12,570 --> 00:03:15,900
+So now let's be clear about the kinds of branches.
+
+39
+00:03:16,170 --> 00:03:18,870
+We have two kinds of branches.
+
+40
+00:03:18,870 --> 00:03:28,440
+The first one is the local branches views local branches inside our local system or workspace that can
+
+41
+00:03:28,440 --> 00:03:32,040
+be used in our local repository.
+
+42
+00:03:32,310 --> 00:03:38,520
+In other words the local branches are actually local to our computer or the local repository that we
+
+43
+00:03:38,520 --> 00:03:41,950
+are working with the same kind.
+
+44
+00:03:41,950 --> 00:03:45,170
+Is there a remote tracking branches.
+
+45
+00:03:45,310 --> 00:03:52,060
+So it is just a connection between the local repository and the central repository the remote tracking
+
+46
+00:03:52,060 --> 00:03:52,590
+branches.
+
+47
+00:03:52,650 --> 00:03:57,330
+It's just going to connect to that local repository to the central repository.
+
+48
+00:03:57,580 --> 00:04:02,420
+So now let's go ahead and learn about branches practically.
+
+49
+00:04:02,440 --> 00:04:06,100
+So here on Windows we have these kids Passhe application.
+
+50
+00:04:06,250 --> 00:04:11,650
+If you are using Macs you need to use the terminal application after installing the kids.
+
+51
+00:04:11,980 --> 00:04:17,290
+So now if you just go ahead and open the file they're going to right click here and then click on get
+
+52
+00:04:17,290 --> 00:04:18,330
+past here.
+
+53
+00:04:18,340 --> 00:04:26,170
+So if you're using Mac you just need to manually just change the direction to this folder to the folder
+
+54
+00:04:26,230 --> 00:04:29,380
+that is named as Android desiccate.
+
+55
+00:04:29,400 --> 00:04:36,450
+So the first thing that you can see here is this mass there inside the prentices dismasted keyboard.
+
+56
+00:04:36,450 --> 00:04:41,530
+This means that we are currently working on the master of branch.
+
+57
+00:04:41,670 --> 00:04:48,640
+So in this way we can understand that currently we are working on which branch.
+
+58
+00:04:48,660 --> 00:04:52,850
+So for now it is master.
+
+59
+00:04:52,860 --> 00:05:01,090
+So in order to create our new branch we just simply needs to type in here get branch
+
+60
+00:05:03,760 --> 00:05:07,790
+make sure that you don't have to type it here and then space.
+
+61
+00:05:07,950 --> 00:05:15,560
+So next we just need to put the name of the branch you can name it whatever you want but make sure that
+
+62
+00:05:15,560 --> 00:05:17,690
+this is a meaningful name.
+
+63
+00:05:17,930 --> 00:05:19,940
+So this is going to be our first branch.
+
+64
+00:05:19,970 --> 00:05:22,620
+I'm going to just put to put here if we.
+
+65
+00:05:23,060 --> 00:05:27,420
+So this F. B stands for first branch and I'm going to press an entity on my keyboard.
+
+66
+00:05:27,470 --> 00:05:28,800
+So let's see what happens.
+
+67
+00:05:29,030 --> 00:05:34,520
+So now the first branch is created.
+
+68
+00:05:34,570 --> 00:05:39,690
+So now let me tell you something about this new branch that we created here.
+
+69
+00:05:40,000 --> 00:05:46,360
+This new branch is actually from the master branch or in other words.
+
+70
+00:05:46,450 --> 00:05:51,760
+This first branch that we created here is originated from the master branch.
+
+71
+00:05:51,790 --> 00:05:56,960
+This means that it contains all the codes of the master branch.
+
+72
+00:05:57,010 --> 00:06:04,420
+In other words it is just a clone of our main project but there is something different here.
+
+73
+00:06:04,460 --> 00:06:10,630
+You can see that we are still inside the master branch so it can be a little bit confusing but that's
+
+74
+00:06:10,630 --> 00:06:11,190
+OK.
+
+75
+00:06:11,350 --> 00:06:16,740
+This means that we need to switch to the new branch that we created here.
+
+76
+00:06:16,750 --> 00:06:24,190
+So in order to see to the new branch we just need to have been here get check out space and then the
+
+77
+00:06:24,190 --> 00:06:24,990
+name of the branch.
+
+78
+00:06:24,990 --> 00:06:32,350
+So if we make sure that is the name that you are referring to is exactly the same name that you created
+
+79
+00:06:32,620 --> 00:06:35,040
+that you set for the new branch.
+
+80
+00:06:35,110 --> 00:06:40,900
+So so mine is F.P. and I'm going to press the Enter key on my keyboard in order to see what happens.
+
+81
+00:06:41,350 --> 00:06:45,150
+So now it says switched to branch if B.
+
+82
+00:06:45,340 --> 00:06:47,170
+And here you can see inside the prentices.
+
+83
+00:06:47,170 --> 00:06:49,190
+It says if B.
+
+84
+00:06:49,330 --> 00:06:51,430
+So hopefully that makes sense.
+
+85
+00:06:51,430 --> 00:06:58,810
+So now let's go ahead and create a new job a file inside our Android dash gets folder.
+
+86
+00:06:58,840 --> 00:07:04,590
+So I'm going to type in here touch so because I'm using the Unix command.
+
+87
+00:07:04,960 --> 00:07:09,550
+That's why this command works here in windows inside the special application.
+
+88
+00:07:09,550 --> 00:07:12,480
+So touch and then space and then the name of the file.
+
+89
+00:07:12,480 --> 00:07:18,880
+So I'm going to name it as more of my Java and then pass on and take you on your keyboard.
+
+90
+00:07:19,150 --> 00:07:24,250
+So if you go ahead and open the Android that's good for there we should see this file here.
+
+91
+00:07:24,250 --> 00:07:32,400
+So here it is our job are fine and I'm going to open this file more by that Java so inside this file
+
+92
+00:07:32,420 --> 00:07:38,300
+Let's click Create on your class so you'll know that the name of your class must be the name the same
+
+93
+00:07:38,330 --> 00:07:39,750
+as the name of your file.
+
+94
+00:07:39,860 --> 00:07:42,590
+So this is going to be the more wide class.
+
+95
+00:07:42,590 --> 00:07:47,020
+So class more by opening calibrates followed by a closing brace.
+
+96
+00:07:47,030 --> 00:07:50,030
+So let me go ahead and increase the font size.
+
+97
+00:07:50,030 --> 00:07:54,680
+So just click on file and if you're using Mac you just need to click on intelligent idea at the top
+
+98
+00:07:54,740 --> 00:07:59,020
+and then go ahead and click on preferences or settings.
+
+99
+00:07:59,600 --> 00:08:02,830
+And then here editor forint.
+
+100
+00:08:03,080 --> 00:08:12,450
+So now you can increase the font size here and now inside this class we can also create a new method.
+
+101
+00:08:12,460 --> 00:08:20,620
+So I can't say Puplick so I'm going to type in here in main Mfat that that class this mobile class is
+
+102
+00:08:20,620 --> 00:08:29,950
+going to have so public static Voyt me and then he said the practice's stream.
+
+103
+00:08:30,000 --> 00:08:37,510
+Aure the data type of the prime with her and its name is going to be Ogg's.
+
+104
+00:08:37,580 --> 00:08:38,630
+So I just miss it.
+
+105
+00:08:38,640 --> 00:08:45,130
+I'm going to say I can hear system thoughts it's the print princeling
+
+106
+00:08:48,000 --> 00:08:54,560
+on inside the coats I'm going to type in hello for semicolon.
+
+107
+00:08:54,850 --> 00:09:02,750
+So I'm going to save this project this fight and I'm going to close it OK.
+
+108
+00:09:03,050 --> 00:09:08,840
+Now let's go back to our bash or the Terminal application.
+
+109
+00:09:08,890 --> 00:09:13,010
+So now I want to come to my changes my more avoid that job.
+
+110
+00:09:13,090 --> 00:09:21,090
+So first we need to add these more by double 5 to the get index and then we can commit our changes remember.
+
+111
+00:09:21,190 --> 00:09:27,540
+So first we need to say get it and then we need to refer to the name of our fine.
+
+112
+00:09:27,540 --> 00:09:34,650
+So Mauboy thought Java and then press on on your keyboard.
+
+113
+00:09:35,110 --> 00:09:41,680
+So if you type in here get status it should say that we need to commit Disneyfied.
+
+114
+00:09:41,740 --> 00:09:51,660
+So I'm going to say gets commits space dash em and then space inside the double quotes we need to typing
+
+115
+00:09:51,660 --> 00:09:52,470
+in a message.
+
+116
+00:09:52,470 --> 00:09:58,960
+So that message is going to be a more vile or I can't say Java.
+
+117
+00:09:59,600 --> 00:10:08,610
+As you can see I actually accidentally pressed on until on my keyboard and it is now it has come it
+
+118
+00:10:08,620 --> 00:10:10,460
+had this new change.
+
+119
+00:10:10,790 --> 00:10:17,600
+But here I just wanted to let you know that this new change is in the first branch.
+
+120
+00:10:17,610 --> 00:10:21,080
+It is not added to the master branch yet.
+
+121
+00:10:21,380 --> 00:10:29,870
+OK so say that because I just wanted to with a paint job class Moabite in the first branch.
+
+122
+00:10:30,000 --> 00:10:31,980
+So now you get the idea.
+
+123
+00:10:31,980 --> 00:10:38,400
+So here you can see that it says that it it does change it's actually committed and it says one file
+
+124
+00:10:38,460 --> 00:10:42,890
+changed here and here you can see the name of the file.
+
+125
+00:10:42,910 --> 00:10:44,770
+Moabite that Jarboe.
+
+126
+00:10:44,820 --> 00:10:53,070
+So here let me tell you that this the change that we added here is in the first branch or if B.
+
+127
+00:10:53,130 --> 00:10:59,580
+Right and in them origin master or in the main branch we don't have this change.
+
+128
+00:10:59,610 --> 00:11:03,240
+So if you type in here l s.
+
+129
+00:11:03,360 --> 00:11:08,100
+Notice that inside Apprentice's it says if B if you press an integer on your keyboard it's going to
+
+130
+00:11:08,100 --> 00:11:11,810
+list all of the files that we have in the main branch.
+
+131
+00:11:11,810 --> 00:11:16,400
+We have to lie in that job on mobile that job and all the other files.
+
+132
+00:11:16,440 --> 00:11:23,060
+So now let's go ahead and switch to the main branch to the origin master.
+
+133
+00:11:23,060 --> 00:11:27,840
+So let's just clear this area first because we have lots of code here.
+
+134
+00:11:27,960 --> 00:11:35,410
+I notice that here it says we're in that desktop Android good for there in the first branch.
+
+135
+00:11:35,430 --> 00:11:39,210
+So now let's go ahead and see what is happening.
+
+136
+00:11:39,260 --> 00:11:41,550
+What is inside that Master branch.
+
+137
+00:11:41,550 --> 00:11:42,770
+So I'm going to type in here.
+
+138
+00:11:42,810 --> 00:11:51,330
+Get check out space and then Sui's to that muscle branch so its name is M..
+
+139
+00:11:51,500 --> 00:11:52,170
+Right.
+
+140
+00:11:52,460 --> 00:11:55,300
+So now press on until key on your keyboard.
+
+141
+00:11:55,430 --> 00:11:58,930
+Now we are switched through the branch mass there.
+
+142
+00:11:59,420 --> 00:12:02,170
+And inside the this is you can see this Master.
+
+143
+00:12:02,180 --> 00:12:05,290
+Let's go ahead and take an L S.
+
+144
+00:12:05,330 --> 00:12:13,790
+Now we have like Java music that Java and all the other files but we don't have the Mauboy that java
+
+145
+00:12:13,850 --> 00:12:15,820
+file in the master Brandt's.
+
+146
+00:12:15,950 --> 00:12:18,020
+So now it's Challenge time.
+
+147
+00:12:18,080 --> 00:12:26,210
+Your challenge is to go ahead and create a new directory on your desktop and name it as chat app and
+
+148
+00:12:26,210 --> 00:12:32,480
+then create a new file and the name is named as voice chat.
+
+149
+00:12:32,750 --> 00:12:37,180
+But this voice chat file should be in the new branch.
+
+150
+00:12:37,280 --> 00:12:42,530
+You can name it whatever you want but it should be added in the new branch and then you can add changes
+
+151
+00:12:42,860 --> 00:12:51,600
+there and then make sure to list the files that you have inside the folder that you are actually adding
+
+152
+00:12:51,700 --> 00:12:53,050
+that new branch.
+
+153
+00:12:53,120 --> 00:13:00,890
+That is for the voice chat in the new branch and you are not messing up with the master branch and make
+
+154
+00:13:00,890 --> 00:13:06,060
+sure that inside your master branch you have some other files so that you can see the difference.
+
+155
+00:13:06,110 --> 00:13:09,330
+So give this challenge a go and good luck.
+
+156
+00:13:09,500 --> 00:13:13,410
+So now it's time to learn about merging.
+
+157
+00:13:13,820 --> 00:13:20,480
+So now assume that we have the master branch right so the master branch all told you is the production
+
+158
+00:13:20,480 --> 00:13:21,400
+ready project.
+
+159
+00:13:21,410 --> 00:13:25,220
+This is the project that is going to have the updated codes.
+
+160
+00:13:25,370 --> 00:13:29,730
+It is going to be the project that we are going to for example if it is an Android app.
+
+161
+00:13:29,850 --> 00:13:34,630
+This is going to be the project that we want to upload to the Google Play store.
+
+162
+00:13:35,030 --> 00:13:38,110
+So this is the project that we want.
+
+163
+00:13:38,120 --> 00:13:40,030
+We don't want to mess up.
+
+164
+00:13:40,520 --> 00:13:44,240
+So now for example its name IIS chat app.
+
+165
+00:13:44,520 --> 00:13:55,940
+Ok now we want to add a new feature called voice chat to the application but we don't want to just interrupt
+
+166
+00:13:56,140 --> 00:13:57,420
+the master branch.
+
+167
+00:13:57,560 --> 00:14:02,170
+So now we are creating a new branch and its name is FP.
+
+168
+00:14:02,570 --> 00:14:09,210
+So for example if B stands for first branch the name of the feature is voice chat feature and for example
+
+169
+00:14:09,300 --> 00:14:10,320
+it is done.
+
+170
+00:14:10,320 --> 00:14:15,240
+We have successfully added the voice voice chat feature to our application.
+
+171
+00:14:15,240 --> 00:14:16,470
+So now what.
+
+172
+00:14:16,470 --> 00:14:27,530
+Now it's time to merge back in this feature to our final project to our production ready project by
+
+173
+00:14:27,540 --> 00:14:31,830
+using the merging operation.
+
+174
+00:14:31,910 --> 00:14:37,820
+OK now that we have the new feature it's time to merge it back to the master branch.
+
+175
+00:14:37,860 --> 00:14:40,800
+So let's go ahead and let's see how it's done.
+
+176
+00:14:40,800 --> 00:14:44,700
+So now open your bash application or your terminal application.
+
+177
+00:14:44,700 --> 00:14:50,870
+If you're using Mac and here make sure that you are in the master branch first.
+
+178
+00:14:50,940 --> 00:14:51,660
+If you are not.
+
+179
+00:14:51,660 --> 00:14:56,410
+Make sure to check out the master branch because the master branch is the target.
+
+180
+00:14:56,670 --> 00:14:58,510
+You want to merge back.
+
+181
+00:14:58,770 --> 00:15:01,980
+Our first branch to our Master branch.
+
+182
+00:15:01,980 --> 00:15:08,430
+So make sure that instead Apprentice's it is mass there and here the command that we are going to use
+
+183
+00:15:08,670 --> 00:15:15,440
+is get marriage and then the name of the branch so the name of our branch is.
+
+184
+00:15:15,530 --> 00:15:23,950
+If the so before I before I press Enter key on my keyboard just take a look at these lists.
+
+185
+00:15:23,960 --> 00:15:26,760
+Here we have the line and all of these files.
+
+186
+00:15:26,840 --> 00:15:30,570
+But we don't have more why the java file inside the master branch.
+
+187
+00:15:30,600 --> 00:15:35,110
+I'm going to execute this command by pressing on my key on my keyboard.
+
+188
+00:15:36,100 --> 00:15:41,420
+Now I'm going to type in here l s in order to see what I have inside there.
+
+189
+00:15:41,440 --> 00:15:43,450
+M. branch so not.
+
+190
+00:15:43,450 --> 00:15:48,540
+Is this more by the java file is added to the master branch.
+
+191
+00:15:48,850 --> 00:15:52,640
+OK so let me clear this area for you.
+
+192
+00:15:54,860 --> 00:16:02,740
+So another important point that I want you to know about is that the first branch still exists.
+
+193
+00:16:02,830 --> 00:16:10,190
+OK we just merged our first branch to our Master branch but the first branch still exists and you can
+
+194
+00:16:10,370 --> 00:16:16,010
+check out to the first branch and if you want to you can add new features to your application to your
+
+195
+00:16:16,010 --> 00:16:20,800
+project and then just made it back into the master branch.
+
+196
+00:16:20,810 --> 00:16:27,550
+So for example I can't say get check out if B.
+
+197
+00:16:28,130 --> 00:16:35,380
+So not inside the prentices you can see that via checked out or you are switched to their branch.
+
+198
+00:16:35,660 --> 00:16:42,070
+And then we can go ahead and open the Android Dashti there and then go ahead and open them more while
+
+199
+00:16:42,080 --> 00:16:43,780
+the Java fight next.
+
+200
+00:16:43,790 --> 00:16:46,070
+Let's go ahead and modify this file.
+
+201
+00:16:46,130 --> 00:16:49,470
+So I'm going to add one more line of code here.
+
+202
+00:16:50,600 --> 00:16:56,980
+One more statement and this time I'm going to say Hollywood word.
+
+203
+00:16:57,020 --> 00:17:05,020
+So now let's go ahead and save this project and close it and then we can go ahead to our Basche application
+
+204
+00:17:05,150 --> 00:17:11,800
+or the terminal application and then inside the first branch I'm going to come it's my changes.
+
+205
+00:17:11,810 --> 00:17:21,980
+But here let me tell you that because we just modified our already existing Java find inside this android
+
+206
+00:17:22,010 --> 00:17:23,640
+that dasht get full there.
+
+207
+00:17:24,020 --> 00:17:31,910
+We don't have to necessarily at our file today get index because it is all of the data we just modified
+
+208
+00:17:31,910 --> 00:17:32,650
+it.
+
+209
+00:17:32,690 --> 00:17:39,480
+So in order to commit our change we can just say kids commit dash
+
+210
+00:17:42,100 --> 00:17:43,120
+dash em.
+
+211
+00:17:43,260 --> 00:17:49,820
+So I know that we use this command in order to add multiple files to the index.
+
+212
+00:17:49,980 --> 00:17:58,560
+But here because we have already this file inside a folder and we just modify it then I'm going to use
+
+213
+00:17:58,560 --> 00:18:05,880
+this dash 8 here in order to also add these change to the index to the get indexed so we don't have
+
+214
+00:18:05,880 --> 00:18:10,010
+to type in here to get ADD and then the name of the file.
+
+215
+00:18:10,170 --> 00:18:11,800
+But using this dash 8.
+
+216
+00:18:11,820 --> 00:18:19,410
+We are already also adding this change to the get index and also commenting it gets by using dash M
+
+217
+00:18:20,070 --> 00:18:22,750
+and then inside the double quotes.
+
+218
+00:18:22,830 --> 00:18:31,230
+I can say modified the more about the Java fight inside the first branch and then person until January
+
+219
+00:18:31,230 --> 00:18:33,390
+but in order to execute this command.
+
+220
+00:18:33,390 --> 00:18:36,600
+Now if I type in here get status.
+
+221
+00:18:36,600 --> 00:18:42,150
+Now here you can see that it says that on branch if b nothing to come in.
+
+222
+00:18:42,150 --> 00:18:48,420
+So it is already committed here you can see it says modified at the moment that justified inside the
+
+223
+00:18:48,420 --> 00:18:48,930
+first branch.
+
+224
+00:18:48,930 --> 00:18:53,130
+So this is actually the message so I have a typo here also.
+
+225
+00:18:53,520 --> 00:18:58,840
+And here you can see that it has modified the movement wide that Java find inside the first branch.
+
+226
+00:18:59,010 --> 00:19:00,590
+So hopefully that makes sense.
+
+227
+00:19:00,630 --> 00:19:08,130
+And now we can go ahead and Mitsch back our first branch to our origin master to our origin branch or
+
+228
+00:19:08,310 --> 00:19:16,570
+the master branch how first you need to check out to our Master branch the master branch is that destination.
+
+229
+00:19:16,770 --> 00:19:21,140
+So I'm going to say get check out.
+
+230
+00:19:21,320 --> 00:19:27,220
+And then the name of the branch which is the master now in say the Prentice's it says master.
+
+231
+00:19:27,230 --> 00:19:30,850
+Now I'm going to go ahead and type in here get marriage.
+
+232
+00:19:31,060 --> 00:19:39,930
+I'm going to merge back our first branch to L.M. branch so it gets merge if the done.
+
+233
+00:19:40,130 --> 00:19:42,930
+Now here it says updating.
+
+234
+00:19:43,280 --> 00:19:47,490
+Now our changes are done and it's just one file changed.
+
+235
+00:19:47,540 --> 00:19:52,910
+So I just cleared this area for you so you can see what's going on here Beder.
+
+236
+00:19:53,120 --> 00:19:59,210
+Here you can see that we are still inside the master branch but how do you know that something is changed.
+
+237
+00:19:59,210 --> 00:20:02,320
+How do I know what is modified actually.
+
+238
+00:20:02,630 --> 00:20:04,190
+So we have a comment for that.
+
+239
+00:20:04,190 --> 00:20:05,310
+You just need to type in here.
+
+240
+00:20:05,310 --> 00:20:07,520
+Cat space.
+
+241
+00:20:07,720 --> 00:20:08,920
+And in the name of the file.
+
+242
+00:20:08,940 --> 00:20:13,360
+So of what it is more by DOT Java Java.
+
+243
+00:20:13,660 --> 00:20:15,700
+Find some that Java.
+
+244
+00:20:15,850 --> 00:20:20,310
+So here let me tell you that you must be inside this directory and really Dasch get.
+
+245
+00:20:20,500 --> 00:20:26,110
+And in the massive branch so that you can see that what is changed inside the master branch and then
+
+246
+00:20:26,110 --> 00:20:27,970
+press enter on your keyboard.
+
+247
+00:20:27,970 --> 00:20:35,810
+So here we have the class mobile and inside this class we have the Smurfette and we have these two lines
+
+248
+00:20:35,810 --> 00:20:36,220
+of code.
+
+249
+00:20:36,230 --> 00:20:39,530
+But the second line of code system that ousted princeling.
+
+250
+00:20:39,560 --> 00:20:47,540
+It is added in the last update so you can see that it every team is committed perfectly and you can
+
+251
+00:20:47,570 --> 00:20:50,270
+also use this command in another branch.
+
+252
+00:20:50,270 --> 00:20:56,840
+For example in your first branch or a B you can use this command in order to see what is actually modified
+
+253
+00:20:57,200 --> 00:21:04,910
+and then decide whether you want to marriage back that change that branch to your master or branch or
+
+254
+00:21:04,910 --> 00:21:05,390
+not.
+
+255
+00:21:05,420 --> 00:21:05,920
+So you can't.
+
+256
+00:21:05,930 --> 00:21:11,810
+You just need to use chat and then the name of the file that you have changed or modified so now that
+
+257
+00:21:11,810 --> 00:21:16,260
+you have learned about the merging operation it's Challenge time.
+
+258
+00:21:16,250 --> 00:21:24,440
+Go ahead and add that voice chat feature that you have created in the last challenge.
+
+259
+00:21:24,440 --> 00:21:28,900
+Go ahead and merge that into your master branch.
+
+260
+00:21:29,210 --> 00:21:30,500
+So good luck.
+
+261
+00:21:30,680 --> 00:21:38,630
+So now that we have learnt about the merging operation it's time to learn about the rebase operation.
+
+262
+00:21:38,900 --> 00:21:46,240
+So the rebase operation does actually the same job the same task as the merging does.
+
+263
+00:21:46,500 --> 00:21:49,820
+OK but in a different way in a linear manner.
+
+264
+00:21:49,940 --> 00:21:57,680
+So based on my own experience it's better to learn about the rebasing operation practically.
+
+265
+00:21:57,680 --> 00:22:01,100
+So let's go ahead and open our bash for Terminal application.
+
+266
+00:22:01,250 --> 00:22:04,050
+Let's see what is actually rebasing.
+
+267
+00:22:04,130 --> 00:22:10,580
+So first let's clear this area and then let's Sui's to the first branch.
+
+268
+00:22:10,820 --> 00:22:11,810
+So I'm going to type in here.
+
+269
+00:22:11,810 --> 00:22:16,020
+Get check out it the.
+
+270
+00:22:16,240 --> 00:22:20,310
+Now let's go ahead and open our Android that is fine and I'm going to go ahead.
+
+271
+00:22:20,710 --> 00:22:24,430
+And here we can either create the next device.
+
+272
+00:22:24,670 --> 00:22:30,340
+But if you want to create jobs files you can do it here in your bash or terminal application.
+
+273
+00:22:30,340 --> 00:22:34,690
+So I'm going to type in here touch and then the name of the file.
+
+274
+00:22:34,720 --> 00:22:42,520
+So the first one is going to be a boxer Dart's Java file and another file Let's go ahead and say touch
+
+275
+00:22:43,160 --> 00:22:46,490
+each boxer dot Java.
+
+276
+00:22:46,910 --> 00:22:47,540
+OK.
+
+277
+00:22:47,620 --> 00:22:53,620
+Now if you go ahead and open your folder you should see these two files the set and the kickboxer.
+
+278
+00:22:53,890 --> 00:22:56,390
+And then let's go ahead and open the box file.
+
+279
+00:22:56,440 --> 00:22:58,990
+So here we don't have to create a class.
+
+280
+00:22:59,170 --> 00:23:02,960
+I just want to modify this fine sand going out and tell a value.
+
+281
+00:23:02,980 --> 00:23:12,260
+I can say DCs Boxer and then save is fine clothes it's next go ahead and open the kickboxer file.
+
+282
+00:23:12,550 --> 00:23:15,070
+And here let's also modify this file.
+
+283
+00:23:15,070 --> 00:23:21,300
+So this is kickboxer save it and then close it OK.
+
+284
+00:23:21,560 --> 00:23:23,960
+Now let's go back to our Flash application.
+
+285
+00:23:23,990 --> 00:23:31,850
+So here make sure that you are already inside the first branch and then to create these two files the
+
+286
+00:23:31,860 --> 00:23:33,680
+boxes and the kickboxer.
+
+287
+00:23:33,740 --> 00:23:40,970
+So now that we created these two files we need to add these two files to get indexed so we have multiple
+
+288
+00:23:40,970 --> 00:23:41,840
+files here right.
+
+289
+00:23:41,870 --> 00:23:51,840
+So you need to say get space dash get space at dash and then a capitol a.
+
+290
+00:23:51,870 --> 00:23:53,150
+This is very important.
+
+291
+00:23:53,260 --> 00:24:01,910
+Get app space dash Capitol a because we have multiple files you want to add multiple files to the index.
+
+292
+00:24:01,950 --> 00:24:08,350
+So I'm going to present to the German Keeble get status.
+
+293
+00:24:08,380 --> 00:24:11,970
+So here it says that we have these two files and we need to commit them.
+
+294
+00:24:12,160 --> 00:24:20,760
+So I'm going to say get space come eat space dash 8.
+
+295
+00:24:20,850 --> 00:24:22,230
+We have multiple flights right.
+
+296
+00:24:22,260 --> 00:24:25,400
+We want to commit all of these flights.
+
+297
+00:24:25,400 --> 00:24:35,680
+So that's why I said that lowercase leader a space dash him space and an inside double quotes the message.
+
+298
+00:24:35,680 --> 00:24:44,920
+So I'm going to say Boxer and teach Boxer Dobber files.
+
+299
+00:24:45,170 --> 00:24:54,480
+It's next let's go ahead and execute this command by pressing the Enter key on our keyboard.
+
+300
+00:24:54,540 --> 00:24:57,440
+So here you can see that it has two files changed.
+
+301
+00:24:57,630 --> 00:25:06,050
+We are inside the first branch so I can say good status in order to see that it says nothing to it.
+
+302
+00:25:06,050 --> 00:25:07,110
+So everything works fine.
+
+303
+00:25:07,110 --> 00:25:08,760
+So let's clear this area.
+
+304
+00:25:08,910 --> 00:25:15,960
+So now if you go ahead and type in here it's inside the first branch we have two new Newfies boxes that
+
+305
+00:25:15,960 --> 00:25:17,780
+Java and kickboxer Java.
+
+306
+00:25:17,940 --> 00:25:25,760
+But if you go ahead and type in here get check out to the master branch and type in here.
+
+307
+00:25:25,790 --> 00:25:31,510
+And as you can see that we don't have their boxer and kickboxer double points here.
+
+308
+00:25:31,560 --> 00:25:35,830
+So let's go back let's go ahead and switch to the first branch.
+
+309
+00:25:36,060 --> 00:25:43,560
+So good checkout if we are going to say that we are inside the first branch and I'm going to type in
+
+310
+00:25:43,560 --> 00:25:43,920
+here.
+
+311
+00:25:43,920 --> 00:25:50,420
+Get space replace M..
+
+312
+00:25:50,490 --> 00:25:55,950
+So notice that you are inside the first branch and we are using this command to get rebase master so.
+
+313
+00:25:56,170 --> 00:26:00,590
+So now let's go ahead and press on until you are on a keyboard and let's see what happens.
+
+314
+00:26:00,590 --> 00:26:05,730
+So now it says the current branch if B is up to date.
+
+315
+00:26:05,780 --> 00:26:15,410
+So this means that now that we've replaced our first branch to our Master branch now it is up to date
+
+316
+00:26:15,410 --> 00:26:20,260
+that everything that we have inside the master master branch is actually inside the first branch.
+
+317
+00:26:20,300 --> 00:26:22,910
+That's why it says it is up to date.
+
+318
+00:26:22,910 --> 00:26:26,370
+So now let's go ahead and let's switch to the master branch.
+
+319
+00:26:26,510 --> 00:26:29,210
+So now I am inside the master branch.
+
+320
+00:26:29,240 --> 00:26:31,240
+I just clear this area for you.
+
+321
+00:26:31,250 --> 00:26:35,660
+So in order to suit to the master branch you know what to do get checked out and then the name of the
+
+322
+00:26:35,660 --> 00:26:36,840
+branch.
+
+323
+00:26:36,870 --> 00:26:40,520
+Now I am going to do the same command in reverse order.
+
+324
+00:26:40,550 --> 00:26:49,990
+I'm going to say get notice that I am inside the master of range gets rebase and then this time I'm
+
+325
+00:26:49,990 --> 00:26:57,190
+going to be fair to my first branch or F. B and then press on into the key on your keyboard.
+
+326
+00:26:57,200 --> 00:27:05,740
+So now let's see what what's happening it says first rebinding head to replay your work on top of it.
+
+327
+00:27:05,930 --> 00:27:09,750
+Fast forward that master to the.
+
+328
+00:27:09,780 --> 00:27:16,830
+So this means that it is actually adding all of the commits of the first branch to the head of the master
+
+329
+00:27:16,830 --> 00:27:17,630
+branch.
+
+330
+00:27:17,640 --> 00:27:23,220
+So this is the same as the merging operation but it is doing it in a linear order.
+
+331
+00:27:23,370 --> 00:27:30,750
+So in this way the advantage of using rebase operation is that we have less branches and everything
+
+332
+00:27:30,750 --> 00:27:32,310
+is done linearly.
+
+333
+00:27:32,310 --> 00:27:37,230
+And I think rebase is better but you can use whatever you want.
+
+334
+00:27:37,230 --> 00:27:40,390
+You can either use marriage or rebase.
+
+335
+00:27:40,390 --> 00:27:46,800
+So now that we are inside the master branch if I type in here and S and press on energy on my keyboard
+
+336
+00:27:46,860 --> 00:27:53,770
+you can see that you have the boxer and the kickboxer that job afarid inside the master right.
+
+337
+00:27:53,910 --> 00:27:55,520
+So it's works perfectly.
+
+338
+00:27:55,590 --> 00:27:57,810
+So now it's challenge time.
+
+339
+00:27:57,810 --> 00:28:01,070
+Go ahead and create a new feature.
+
+340
+00:28:01,080 --> 00:28:08,850
+This means I mean you need to create on your file and you want to add the emoji feature to your chat
+
+341
+00:28:08,910 --> 00:28:09,740
+app.
+
+342
+00:28:09,930 --> 00:28:12,910
+So you want to create a new job find.
+
+343
+00:28:12,920 --> 00:28:15,860
+It doesn't matter what you put in the inside the file.
+
+344
+00:28:15,930 --> 00:28:21,360
+Just go ahead and name it as emoji and you want to add this feature to your chat application so that
+
+345
+00:28:21,420 --> 00:28:30,720
+your chat app can use emojis and then try to use that rebase operation in order marriage.
+
+346
+00:28:30,810 --> 00:28:35,810
+Your featured your file to your master branch.
+
+347
+00:28:36,090 --> 00:28:38,280
+So give this challenge Ekko and good luck.
+
+348
+00:28:38,280 --> 00:28:43,620
+So now let's go ahead and push all of these changes to the central repository
+
+349
+00:28:46,140 --> 00:28:49,450
+and here this is my web browser My central repository.
+
+350
+00:28:49,620 --> 00:28:50,660
+Good hop.
+
+351
+00:28:50,670 --> 00:28:54,320
+And if you go ahead and make sure that you are locked in first.
+
+352
+00:28:54,360 --> 00:28:58,220
+So if you click on your profile you should see your repositories option.
+
+353
+00:28:58,230 --> 00:28:59,370
+If you click on it.
+
+354
+00:28:59,730 --> 00:29:01,810
+So now here it is our repositories.
+
+355
+00:29:01,820 --> 00:29:07,890
+You can also enter this you aren't have that com slash your username in order to see the repositories.
+
+356
+00:29:07,920 --> 00:29:09,990
+So here we have the hello dashboard.
+
+357
+00:29:10,020 --> 00:29:16,680
+If you click on it here it is for example our repository here if you want to you can go ahead and create
+
+358
+00:29:17,100 --> 00:29:18,830
+a new repository here.
+
+359
+00:29:18,870 --> 00:29:25,680
+So the most important point that I want you to know about is that here it is our repository.
+
+360
+00:29:25,680 --> 00:29:26,360
+Hello world.
+
+361
+00:29:26,370 --> 00:29:32,940
+Right so this means that everybody in the good hop community has access to this project they can go
+
+362
+00:29:32,940 --> 00:29:41,430
+ahead and download our project and for example if you want two other people to access this project and
+
+363
+00:29:41,580 --> 00:29:48,390
+in that case then it's going to cause problems because others can mess up with our project or our repository
+
+364
+00:29:48,420 --> 00:29:54,270
+and they can push for example buggy codes or whatever to our project.
+
+365
+00:29:54,390 --> 00:29:56,120
+So we don't want that to happen.
+
+366
+00:29:56,130 --> 00:30:02,770
+We want to create access rights here so here you can see that we have this clone or download option.
+
+367
+00:30:03,000 --> 00:30:08,970
+If I click on it here we have a new option it says use s s h.
+
+368
+00:30:09,030 --> 00:30:10,630
+If you click on this one.
+
+369
+00:30:10,800 --> 00:30:17,660
+Now here it is used as s s h key and passphrase from account.
+
+370
+00:30:17,700 --> 00:30:20,130
+So let's go ahead and copy this link.
+
+371
+00:30:20,250 --> 00:30:22,970
+I'm going to click on this icon in order to copy it.
+
+372
+00:30:22,980 --> 00:30:25,900
+Now let's go ahead and open our bash application.
+
+373
+00:30:26,040 --> 00:30:31,020
+So because of the access rights thing that I told you about.
+
+374
+00:30:31,020 --> 00:30:35,050
+First we need to generate an S S H key.
+
+375
+00:30:35,490 --> 00:30:44,700
+So just type in here s s h dash key gen S-sh dash kitchen and then person on your keyboard.
+
+376
+00:30:45,090 --> 00:30:53,440
+So now it says generating Puplick slash private or as a key pair unterrified in which to save the key.
+
+377
+00:30:53,580 --> 00:30:57,600
+So here it is the address of the file that it is going to save the key.
+
+378
+00:30:57,630 --> 00:30:59,460
+C users.
+
+379
+00:30:59,670 --> 00:31:05,160
+The name of your user name of the computer that S-sh slash ID on the line or state.
+
+380
+00:31:05,310 --> 00:31:08,370
+So I'm going to press on until he again on my keyboard.
+
+381
+00:31:08,460 --> 00:31:10,290
+Now it says create a directory.
+
+382
+00:31:10,290 --> 00:31:17,970
+So here it is the directory in order to find the S-sh key fine and then it says Enter passphrase and
+
+383
+00:31:17,970 --> 00:31:20,100
+it is empty for no passphrase.
+
+384
+00:31:20,100 --> 00:31:23,230
+So if you want to specify a passphrase you can enter it here.
+
+385
+00:31:23,400 --> 00:31:30,220
+So I'm going to enter it here and then as you can see as I'm writing my passphrase here it is not as
+
+386
+00:31:30,240 --> 00:31:35,880
+showing me here letters or even little circles so it is more secure.
+
+387
+00:31:35,880 --> 00:31:41,550
+So don't worry if you are not seeing what is happening here you just need to enter the passphrase and
+
+388
+00:31:41,580 --> 00:31:43,640
+unprecedented on your keyboard.
+
+389
+00:31:44,220 --> 00:31:52,440
+So now it says your identification has been saved in this file in this address and your public key has
+
+390
+00:31:52,440 --> 00:31:54,590
+been saved in this address.
+
+391
+00:31:54,630 --> 00:32:00,510
+The key fingerprint is this one so hopefully that makes sense.
+
+392
+00:32:00,510 --> 00:32:07,010
+And this means that RSS has key is now generated and now we can go ahead and use it.
+
+393
+00:32:07,350 --> 00:32:14,910
+And also if you want to see the content of your SSN key file then you can just go ahead and type in
+
+394
+00:32:14,910 --> 00:32:15,320
+here.
+
+395
+00:32:15,320 --> 00:32:19,980
+The cats comment and then just paste this address here.
+
+396
+00:32:20,060 --> 00:32:22,810
+If it's me I need to type it here again.
+
+397
+00:32:23,040 --> 00:32:28,660
+So the Control-C doesn't fall here I'm going to right click on it and then click on copy.
+
+398
+00:32:28,740 --> 00:32:33,010
+So Chad and I see the here paste.
+
+399
+00:32:33,100 --> 00:32:35,680
+So then press on until you are on your keyboard.
+
+400
+00:32:35,680 --> 00:32:43,020
+So now here it is the S-sh keep my public S-sh key so hopefully that makes sense.
+
+401
+00:32:43,030 --> 00:32:48,710
+So now that we are we have this S-sh key so make sure that you are using these thought pop the public
+
+402
+00:32:49,090 --> 00:32:52,360
+key that we need to use on here.
+
+403
+00:32:52,600 --> 00:32:56,460
+Now that we have this key we need to go ahead and added to our GitHub.
+
+404
+00:32:56,890 --> 00:32:59,610
+So let's go ahead and first copy it is key.
+
+405
+00:32:59,840 --> 00:33:06,070
+I'm going to select it and then click on copy and then go back to get up and here click on your profile
+
+406
+00:33:06,160 --> 00:33:08,090
+and then click on settings.
+
+407
+00:33:08,290 --> 00:33:12,710
+Next go ahead and click on S S H and Peachi keys.
+
+408
+00:33:13,450 --> 00:33:22,420
+First of in if you click on new S-sh key and then we need to provide a title and then we need to paste
+
+409
+00:33:22,420 --> 00:33:23,460
+the excesses there.
+
+410
+00:33:23,470 --> 00:33:25,070
+So let's wait a little bit here.
+
+411
+00:33:25,180 --> 00:33:29,490
+So the title is going to be for example I'm going to say hello world.
+
+412
+00:33:30,620 --> 00:33:35,770
+S-sh Kee and then I'm going to paste the key here.
+
+413
+00:33:36,980 --> 00:33:41,700
+So now I'm going to click on at S-sh key.
+
+414
+00:33:41,870 --> 00:33:49,230
+So now it is asking me to enter the password of my account in good hub so that we can continue to just
+
+415
+00:33:49,250 --> 00:33:52,240
+enter the password and then click and confirm passport.
+
+416
+00:33:52,250 --> 00:33:54,810
+So here it is R S S H key.
+
+417
+00:33:55,070 --> 00:33:56,300
+To get hub.
+
+418
+00:33:56,300 --> 00:33:59,750
+This is the list of essences keys associated with your account.
+
+419
+00:33:59,870 --> 00:34:01,600
+If you want to you can remove them.
+
+420
+00:34:01,610 --> 00:34:04,380
+So now let's go ahead and open our bag.
+
+421
+00:34:04,400 --> 00:34:05,920
+So here it is here.
+
+422
+00:34:06,020 --> 00:34:09,600
+Actually it is a little bit crowded just typing here clear.
+
+423
+00:34:09,740 --> 00:34:16,060
+So now that we have put the S-sh key in the getup now we need to authenticate.
+
+424
+00:34:16,130 --> 00:34:17,760
+So just typing here.
+
+425
+00:34:18,260 --> 00:34:28,670
+S s h space dash capital-T space gets at sign gets hard that's come.
+
+426
+00:34:28,900 --> 00:34:29,440
+OK.
+
+427
+00:34:29,660 --> 00:34:32,110
+And then press on until key on your keyboard.
+
+428
+00:34:33,290 --> 00:34:35,170
+So let's wait a little bit here.
+
+429
+00:34:35,210 --> 00:34:40,100
+Now it says the authenticity of hostes can be established.
+
+430
+00:34:40,230 --> 00:34:43,430
+Arest a key fingerprint is this one.
+
+431
+00:34:43,580 --> 00:34:45,840
+So are you sure you want to continue connecting.
+
+432
+00:34:46,130 --> 00:34:48,160
+So we trust gets Hopp here.
+
+433
+00:34:48,260 --> 00:34:50,200
+So I'm going to just step in here.
+
+434
+00:34:50,210 --> 00:34:51,640
+Yes so it says yes or no.
+
+435
+00:34:51,640 --> 00:34:54,610
+I'm going to enter the yes and then press on into the key on my keyboard.
+
+436
+00:34:54,770 --> 00:35:01,680
+It has permanently added Get hup to the list of known hosts and it has entered a passphrase for this
+
+437
+00:35:01,680 --> 00:35:01,990
+key.
+
+438
+00:35:02,000 --> 00:35:10,640
+So remember that the passphrase that if we needed to specify for our S-sh keep and we could also specify
+
+439
+00:35:10,790 --> 00:35:13,720
+an empty string value an empty value for the password.
+
+440
+00:35:13,910 --> 00:35:17,360
+So if you specify a value for the passport you need to type it here.
+
+441
+00:35:17,360 --> 00:35:18,730
+The passphrase actually.
+
+442
+00:35:18,950 --> 00:35:20,840
+So I'm going to type in here.
+
+443
+00:35:21,560 --> 00:35:22,440
+My passport.
+
+444
+00:35:22,550 --> 00:35:24,920
+So you might not see the passport here.
+
+445
+00:35:24,920 --> 00:35:31,190
+Don't for it just intellect and unprecedented here on your keyboard we have a new message here it says
+
+446
+00:35:31,220 --> 00:35:39,310
+Hi this is my username you've successfully authenticated but kit but get hub does not provide shell
+
+447
+00:35:39,320 --> 00:35:39,860
+access.
+
+448
+00:35:39,860 --> 00:35:41,070
+Don't worry about this one.
+
+449
+00:35:41,120 --> 00:35:46,790
+Now that we are successfully authenticated we can go ahead and push our changes to get hub.
+
+450
+00:35:46,970 --> 00:35:54,770
+So remember always use S-sh key in order to secure your repository in getopt because we don't want anyone
+
+451
+00:35:54,770 --> 00:35:58,640
+else to mess up with our repository.
+
+452
+00:35:58,820 --> 00:36:06,130
+So now if you go to the up here you can see we have this blackout here in the S-sh keys.
+
+453
+00:36:06,260 --> 00:36:10,530
+If I go ahead and refresh this page let's see what happens.
+
+454
+00:36:10,550 --> 00:36:13,580
+Now this key is in green color.
+
+455
+00:36:13,580 --> 00:36:16,070
+This means that we are successfully authenticated.
+
+456
+00:36:16,070 --> 00:36:25,670
+So now here let me tell you that we can also have a new branch in our central repository so that we
+
+457
+00:36:25,760 --> 00:36:33,200
+not actually interrupt or interfere with our main branch in the get up and we can have a new branch
+
+458
+00:36:33,200 --> 00:36:38,810
+for our own and maybe we can name it as new features or whatever.
+
+459
+00:36:38,810 --> 00:36:45,620
+Or if you are actually in a team of developers then you can have your own branch there and everyone
+
+460
+00:36:45,680 --> 00:36:51,500
+will know that this is your for example your branch and you are working on your branch and you have
+
+461
+00:36:51,500 --> 00:36:57,460
+not decided to merge your branch to the master branch yet.
+
+462
+00:36:57,680 --> 00:36:59,560
+So you can have that here too.
+
+463
+00:36:59,720 --> 00:37:02,240
+So let's go ahead and let's see how it works.
+
+464
+00:37:02,240 --> 00:37:07,480
+First of all not now that we are in the sitting space here you can see that we have this option.
+
+465
+00:37:07,480 --> 00:37:11,920
+It says repositories if you click on it we can see our repository here.
+
+466
+00:37:11,940 --> 00:37:12,410
+Hello.
+
+467
+00:37:12,470 --> 00:37:13,960
+If I click on it here.
+
+468
+00:37:14,180 --> 00:37:15,830
+Now we are guided to this page.
+
+469
+00:37:16,100 --> 00:37:20,820
+And now here we have something called branch and currently it is master.
+
+470
+00:37:20,900 --> 00:37:27,820
+If you click on it we can see that here you can create a new branch if you enter the name of your branch.
+
+471
+00:37:27,830 --> 00:37:30,090
+You can just go ahead and create it.
+
+472
+00:37:30,290 --> 00:37:38,020
+But let's go ahead and create our branch in the command line application because it is much more professional.
+
+473
+00:37:38,450 --> 00:37:40,450
+And it is much more better.
+
+474
+00:37:40,580 --> 00:37:45,690
+So let's go ahead and open our bash or our terminal application.
+
+475
+00:37:45,800 --> 00:37:49,360
+So here first let's go ahead and clear this area.
+
+476
+00:37:49,460 --> 00:37:57,880
+So because we want to have a new branch inside a central repository here inside dispatch application
+
+477
+00:37:58,240 --> 00:38:05,710
+let's go ahead and so each to their first branch so I'm going to type in here get checked out and then
+
+478
+00:38:05,710 --> 00:38:06,670
+the name of the branch.
+
+479
+00:38:06,670 --> 00:38:14,500
+So if the and in here I'm going to notice that instead Apprentice's it's true you should say the name
+
+480
+00:38:14,500 --> 00:38:15,520
+of your branch.
+
+481
+00:38:15,800 --> 00:38:22,970
+So next step in here is push space origin space.
+
+482
+00:38:22,980 --> 00:38:30,360
+Now before we used mass there right now we're going to just refer to the name of our branch which is
+
+483
+00:38:30,360 --> 00:38:37,370
+going to be iffy and then press on Enter key on your keyboard in order to execute this command.
+
+484
+00:38:38,880 --> 00:38:41,220
+So here it says origin.
+
+485
+00:38:41,280 --> 00:38:43,440
+So it says the origin does not exist.
+
+486
+00:38:43,440 --> 00:38:45,100
+I have a typo here.
+
+487
+00:38:45,330 --> 00:38:47,810
+So I'm going to enter my command again.
+
+488
+00:38:47,820 --> 00:38:48,630
+Get push
+
+489
+00:38:51,690 --> 00:39:02,880
+and origin if the now let's wait a little bit here so here it says enumerating objects 14.
+
+490
+00:39:03,010 --> 00:39:04,930
+And it says Don.
+
+491
+00:39:05,140 --> 00:39:12,270
+So here you can see that it says Create a pull request for if be an get.
+
+492
+00:39:12,850 --> 00:39:15,630
+By visiting this you Ardell.
+
+493
+00:39:15,730 --> 00:39:21,940
+So now you can notice that we have a new branch inside our central repository.
+
+494
+00:39:22,060 --> 00:39:30,310
+So if you go ahead and you go to your central repository here it says your recently pushed branches
+
+495
+00:39:30,670 --> 00:39:32,100
+here we have the B.
+
+496
+00:39:32,110 --> 00:39:34,610
+If I click on this if the.
+
+497
+00:39:34,810 --> 00:39:36,830
+Now here it is our FP branch.
+
+498
+00:39:37,000 --> 00:39:39,470
+So here it is branch if B.
+
+499
+00:39:39,760 --> 00:39:40,220
+Right.
+
+500
+00:39:40,360 --> 00:39:42,580
+We are not inside the master branch anymore.
+
+501
+00:39:42,580 --> 00:39:48,760
+We have two branches the first one is the master and we have also the piece of your code inside the
+
+502
+00:39:49,360 --> 00:39:50,680
+first branch.
+
+503
+00:39:50,680 --> 00:39:53,290
+So inside the first branch we have all of these files.
+
+504
+00:39:53,290 --> 00:39:54,460
+We have the box.
+
+505
+00:39:54,730 --> 00:40:02,240
+Kickboxer Laia immobile read me all of these files and if I switch to the master branch you can see
+
+506
+00:40:02,240 --> 00:40:06,690
+that we only have the music of job fine and they read me that in the file.
+
+507
+00:40:06,770 --> 00:40:09,380
+So now hopefully you get the idea.
+
+508
+00:40:09,440 --> 00:40:11,450
+Now we can go ahead and so is today.
+
+509
+00:40:11,480 --> 00:40:12,650
+M. branch.
+
+510
+00:40:12,680 --> 00:40:18,050
+So here let's first clear this area and I'm going to type in here.
+
+511
+00:40:18,360 --> 00:40:19,070
+Good.
+
+512
+00:40:19,160 --> 00:40:23,330
+Check out master.
+
+513
+00:40:23,540 --> 00:40:32,000
+And then just step in here gets push space origin Masterson make sure that inside Apprentice's it says
+
+514
+00:40:32,000 --> 00:40:36,110
+Master that this means that we are currently inside the master branch.
+
+515
+00:40:36,290 --> 00:40:42,560
+And then I just need to push my changes to that master branch in a central repository.
+
+516
+00:40:42,560 --> 00:40:45,340
+So I'm going to press on and three key on my keyboard.
+
+517
+00:40:45,510 --> 00:40:47,060
+The process is finished.
+
+518
+00:40:47,060 --> 00:40:52,410
+If you go back to your central repository and here the branch is master.
+
+519
+00:40:52,730 --> 00:41:01,580
+So here make sure that branch is master and make sure to first refresh this page and then you can see
+
+520
+00:41:01,580 --> 00:41:02,180
+these changes.
+
+521
+00:41:02,180 --> 00:41:08,420
+You can see that all of your files are added to the master branch and you can also switch to the first
+
+522
+00:41:08,420 --> 00:41:12,140
+branch or your F B and you can see these files here.
+
+523
+00:41:12,140 --> 00:41:14,170
+So hopefully that makes sense.
+
+524
+00:41:15,060 --> 00:41:24,730
+So the final important point that you want to talk about here is about going back to the previous change.
+
+525
+00:41:24,810 --> 00:41:32,010
+So let's go ahead and open our folder and write test kits and for example go ahead and open the mobile
+
+526
+00:41:32,010 --> 00:41:33,970
+that Java find here.
+
+527
+00:41:34,110 --> 00:41:40,480
+I want to add another change I want to add another line of code to my main effort and paste it here.
+
+528
+00:41:40,800 --> 00:41:43,510
+And this time I want to say or let's say everyone.
+
+529
+00:41:43,650 --> 00:41:48,710
+So let's save this file and then close our project.
+
+530
+00:41:48,930 --> 00:41:55,250
+And then let's end there because I want to see the contents of my mobile that fight.
+
+531
+00:41:55,270 --> 00:42:01,620
+So Chatz Mauboy thought Java.
+
+532
+00:42:01,670 --> 00:42:03,370
+So here you can see the content.
+
+533
+00:42:03,380 --> 00:42:05,720
+And here you can see this line of code everyone.
+
+534
+00:42:05,720 --> 00:42:12,200
+So for example I don't like this new change that I added to my mobile that are fine and I want to go
+
+535
+00:42:12,200 --> 00:42:14,900
+back to the previous version of this file.
+
+536
+00:42:15,020 --> 00:42:21,710
+So now that we have changed our file you know that first we need to commit our changes and then we can
+
+537
+00:42:21,710 --> 00:42:25,190
+decide whether we liked our change or not.
+
+538
+00:42:25,190 --> 00:42:31,880
+Or in that case we can decide that we want to go back to the previous version or previous snapshot because
+
+539
+00:42:32,240 --> 00:42:40,460
+what I told you about snapshot or comments is that we have the updated or in other words we have a snapshot
+
+540
+00:42:40,490 --> 00:42:43,130
+that contains the most updated code.
+
+541
+00:42:43,430 --> 00:42:49,230
+So now we don't have that snapshot and this means that we cannot go back to the previous comment.
+
+542
+00:42:49,250 --> 00:42:58,120
+So first we need to create a comment I'm going to say get it because we have only modified our file.
+
+543
+00:42:58,130 --> 00:43:03,700
+We can say dash a space dash em and then two coats.
+
+544
+00:43:03,830 --> 00:43:10,790
+And then I can say modified more by the age of a fight two coats and then press enter on your keyboard.
+
+545
+00:43:10,820 --> 00:43:20,870
+So next go ahead and use this command get log in order to just put the lugs inside the command line
+
+546
+00:43:20,870 --> 00:43:21,600
+tool.
+
+547
+00:43:21,890 --> 00:43:31,780
+So next you have the lugs and then you need to find the specific log that is related to the previous
+
+548
+00:43:31,780 --> 00:43:33,640
+changes of your file.
+
+549
+00:43:33,640 --> 00:43:37,810
+So for example in this case our file is more than that of a file.
+
+550
+00:43:38,020 --> 00:43:44,590
+So I want to roll back to the previous changes so you need to take a look at the logs and see version
+
+551
+00:43:44,620 --> 00:43:47,430
+of the file you want to roll back to.
+
+552
+00:43:47,560 --> 00:43:50,350
+So here for example you have the date.
+
+553
+00:43:50,380 --> 00:43:55,040
+So for example I want to go back to these two the changes that I made at this hour.
+
+554
+00:43:55,120 --> 00:43:55,860
+Right.
+
+555
+00:43:55,900 --> 00:44:01,450
+So you just need to find that specific date and find that specific commit here you can see the commit
+
+556
+00:44:01,960 --> 00:44:08,870
+and then you can go ahead and copy the first 8 digits of this hexadecimal code.
+
+557
+00:44:08,890 --> 00:44:19,180
+So one two three four five six seven eight capitis the first eight hex decimal digits and then go back
+
+558
+00:44:19,180 --> 00:44:23,820
+to the bash file or the Terminal application.
+
+559
+00:44:23,830 --> 00:44:26,950
+So here you just need to enter get.
+
+560
+00:44:26,980 --> 00:44:30,420
+So make sure that you are inside this and retested directory.
+
+561
+00:44:30,680 --> 00:44:32,380
+I am inside the master branch.
+
+562
+00:44:32,590 --> 00:44:40,220
+So get check out space and then you need to paste the hexadecimal code here.
+
+563
+00:44:41,780 --> 00:44:42,390
+Space.
+
+564
+00:44:42,530 --> 00:44:43,800
+And then the name of the file.
+
+565
+00:44:43,820 --> 00:44:51,090
+So it is more byde that Joe and then present it on your keyboard.
+
+566
+00:44:51,400 --> 00:44:59,270
+Now let's go ahead and let's see what is the content of our mobile device are cats more ways that Java.
+
+567
+00:44:59,530 --> 00:45:04,630
+So here you can see now we are rolled back to this version of the file.
+
+568
+00:45:04,630 --> 00:45:09,040
+We don't have that specific line of code that we had at here.
+
+569
+00:45:09,220 --> 00:45:14,020
+We added here because we wanted to go back to the previous comment.
+
+570
+00:45:14,020 --> 00:45:16,540
+Now here you can see this line of code.
+
+571
+00:45:16,540 --> 00:45:22,650
+This means that you are rolled back to the previous version of this file and everything is working perfectly.
+
+572
+00:45:22,690 --> 00:45:28,650
+But remember these changes can only be rolled back if you commit your changes.
+
+573
+00:45:28,780 --> 00:45:29,030
+OK.
+
+574
+00:45:29,050 --> 00:45:32,280
+We have snapshots of our project.
+
+575
+00:45:32,290 --> 00:45:37,840
+So for example you create a snapshot and later you know that's all you'll find out that that specific
+
+576
+00:45:37,840 --> 00:45:43,300
+change is not working and you want to roll back to the commit period to the previous comment.
+
+577
+00:45:43,300 --> 00:45:48,070
+So you just go ahead and use this come and get checked out.
+
+578
+00:45:48,340 --> 00:45:54,700
+And then at their first digits of the hexadecimal code of the commits that you want to roll back to
+
+579
+00:45:55,150 --> 00:45:57,460
+and then the name of the fight more by that.
+
+580
+00:45:57,520 --> 00:46:00,360
+In this case and then everything will be working fine.
+
+581
+00:46:00,550 --> 00:46:07,180
+So make sure to use this cat's command in order to always check your content of your file and see that
+
+582
+00:46:07,180 --> 00:46:08,820
+everything is working perfectly.
+
+583
+00:46:08,980 --> 00:46:12,250
+So let's see what we have learned so far in this video.
+
+584
+00:46:12,340 --> 00:46:19,060
+We have learned about Padel and development but overall we have learned about the working space.
+
+585
+00:46:19,120 --> 00:46:27,190
+The project that you're working on and then we add our changes to the staging area the index get index
+
+586
+00:46:27,730 --> 00:46:30,540
+and then we have the local repository.
+
+587
+00:46:30,910 --> 00:46:33,750
+So for example because it's our changes.
+
+588
+00:46:34,030 --> 00:46:41,050
+So that's why we need the local repository so that we have these snapshots of our project and then we
+
+589
+00:46:41,050 --> 00:46:46,000
+have the remote repository that is actually our central repository.
+
+590
+00:46:46,120 --> 00:46:54,390
+In this case it is getup and we use the push pull operations in order to push our changes to our remote
+
+591
+00:46:54,430 --> 00:47:02,530
+repository or we use the pool operation to pool our tune changes back from the remote's repository.
+
+592
+00:47:02,530 --> 00:47:10,030
+So this is really all we have learned about parallel development about the branching concept.
+
+593
+00:47:10,060 --> 00:47:13,210
+We also learned about merging and rebasing.
+
+594
+00:47:13,510 --> 00:47:20,940
+And then finally we could actually push all of our changes to the remote repository.
+
+595
+00:47:21,100 --> 00:47:29,500
+So in the next year two or three of we are going to learn how to integrate the kit to Android studio.
+
+596
+00:47:29,560 --> 00:47:32,420
+So I look forward to seeing you in the next video.

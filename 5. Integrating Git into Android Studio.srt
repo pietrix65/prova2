@@ -1,0 +1,1015 @@
+1
+00:00:00,240 --> 00:00:01,140
+Hello everyone.
+
+2
+00:00:01,140 --> 00:00:02,630
+Welcome to this video.
+
+3
+00:00:02,770 --> 00:00:08,320
+In this story are you going to integrate get into Android studio.
+
+4
+00:00:08,370 --> 00:00:14,310
+So now let's go ahead and create a new project and choose empty activity.
+
+5
+00:00:14,820 --> 00:00:17,560
+So let's name the project to be good.
+
+6
+00:00:17,580 --> 00:00:18,580
+Android studio.
+
+7
+00:00:18,690 --> 00:00:26,850
+So just typing here to get Android studio and then the package name the save location path make sure
+
+8
+00:00:26,850 --> 00:00:28,640
+that the language is Java.
+
+9
+00:00:28,860 --> 00:00:30,540
+You can choose Castine if you want.
+
+10
+00:00:30,540 --> 00:00:37,040
+Because in this project we just want to integrate the kit into Android studio so we don't want to write
+
+11
+00:00:37,050 --> 00:00:45,810
+Java code here or cotton coats and a minimum API level is going to be 16 API 16 and click on finish.
+
+12
+00:00:45,810 --> 00:00:47,450
+So now let me click on.
+
+13
+00:00:47,490 --> 00:00:47,930
+Yes.
+
+14
+00:00:47,940 --> 00:00:51,360
+And these experiments are a great great feature.
+
+15
+00:00:51,360 --> 00:00:53,600
+Now let's go ahead and let's see.
+
+16
+00:00:53,820 --> 00:01:00,890
+Let's actually test the gate so that we can be sure that they get is actually installed on our computer.
+
+17
+00:01:01,200 --> 00:01:06,420
+So if you don't have that get installed on your computer you need to go ahead and download and install
+
+18
+00:01:06,420 --> 00:01:06,820
+it.
+
+19
+00:01:07,230 --> 00:01:14,340
+And when you actually Dan Lothian raid the studio they get also comes with Andrew the studio and you
+
+20
+00:01:14,340 --> 00:01:16,230
+already have that get on your computer.
+
+21
+00:01:16,260 --> 00:01:18,920
+But it's better to test.
+
+22
+00:01:19,170 --> 00:01:20,920
+So let's go ahead and click on file.
+
+23
+00:01:20,970 --> 00:01:24,130
+If you are using Mac just click on Android to suit your preferences.
+
+24
+00:01:24,300 --> 00:01:26,640
+And here click on settings next.
+
+25
+00:01:26,670 --> 00:01:29,840
+Go ahead and click on version control here.
+
+26
+00:01:29,850 --> 00:01:31,850
+Open it and then choose.
+
+27
+00:01:31,860 --> 00:01:32,500
+Get up.
+
+28
+00:01:32,520 --> 00:01:33,920
+Just click on it.
+
+29
+00:01:34,050 --> 00:01:37,000
+Now here it does not get Harbach counts added.
+
+30
+00:01:37,290 --> 00:01:42,120
+So we need to first add an archetype account to Android studio.
+
+31
+00:01:42,120 --> 00:01:45,140
+So just click on an account here.
+
+32
+00:01:45,390 --> 00:01:47,730
+So the server is get hot that's come.
+
+33
+00:01:47,730 --> 00:01:50,920
+Now you need to enter our username and password here.
+
+34
+00:01:51,120 --> 00:01:56,760
+And when you enter your credentials click on luggin And if you don't have a good account you need to
+
+35
+00:01:56,760 --> 00:01:58,670
+go ahead and create one.
+
+36
+00:01:58,800 --> 00:02:00,790
+So just click on and log in.
+
+37
+00:02:01,080 --> 00:02:07,390
+Now we should wait here so here you can see my account is added to Android studio here.
+
+38
+00:02:07,410 --> 00:02:14,700
+So now that we have added our account to Android studio here below is version control.
+
+39
+00:02:14,700 --> 00:02:16,290
+If you open it you can see these kids.
+
+40
+00:02:16,320 --> 00:02:23,880
+If you click on it here it is the path to today kids start a fire inside my computer and if you click
+
+41
+00:02:23,880 --> 00:02:30,600
+on the test button here it's gonna show you a success message and it's going to give you the version
+
+42
+00:02:30,600 --> 00:02:30,980
+of the key.
+
+43
+00:02:30,990 --> 00:02:32,330
+It's sort of I just need to click on OK.
+
+44
+00:02:32,340 --> 00:02:36,350
+So now I am sure that the kit is installed on my computer.
+
+45
+00:02:36,360 --> 00:02:38,980
+Let's go ahead and click on apply or.
+
+46
+00:02:38,990 --> 00:02:40,910
+OK so now everything is fine.
+
+47
+00:02:40,950 --> 00:02:49,260
+So now in order to share our project and get up at the top and you have this option VC it's just going
+
+48
+00:02:49,260 --> 00:02:50,010
+to click on it.
+
+49
+00:02:50,100 --> 00:02:52,290
+And then here you can see some options.
+
+50
+00:02:52,290 --> 00:02:58,200
+For example we have the local history enable version control integration wiseass operations pop up and
+
+51
+00:02:58,260 --> 00:02:59,380
+some other options.
+
+52
+00:02:59,610 --> 00:03:06,840
+Let's go ahead and go into the import into Version control and then we have this option that says share
+
+53
+00:03:06,840 --> 00:03:10,990
+project and get up let's click on it and let's wait a little bit here.
+
+54
+00:03:11,010 --> 00:03:15,520
+So here it's going to create a repository for us and get up.
+
+55
+00:03:15,570 --> 00:03:19,380
+So it is giving us this repository name as a suggestion.
+
+56
+00:03:19,480 --> 00:03:20,980
+You can if you want you can change it.
+
+57
+00:03:21,150 --> 00:03:22,320
+Get Android studio.
+
+58
+00:03:22,320 --> 00:03:27,330
+So this is the name of our project so you can also check the search box if you want your product to
+
+59
+00:03:27,330 --> 00:03:27,980
+be private.
+
+60
+00:03:27,990 --> 00:03:33,590
+We have the remote here the remote name and the description.
+
+61
+00:03:33,630 --> 00:03:37,580
+So about 30 modes and the description for now let's just click on share.
+
+62
+00:03:37,590 --> 00:03:40,550
+So here we have something really interesting.
+
+63
+00:03:40,590 --> 00:03:47,070
+We have this window that says at Feis for initial coming so we don't have to write code here command
+
+64
+00:03:47,070 --> 00:03:54,090
+line codes here we just need to interact with this application and just click on OK and then come it
+
+65
+00:03:54,270 --> 00:03:56,650
+will be executed.
+
+66
+00:03:56,700 --> 00:04:02,000
+So here not is that it is actually committing all of these files here.
+
+67
+00:04:02,040 --> 00:04:08,940
+So because this our initial commit of this project I suggest that you do actually commit all of these
+
+68
+00:04:08,940 --> 00:04:16,250
+files to a central repository because of this in our central repository we don't have these files.
+
+69
+00:04:16,260 --> 00:04:22,170
+So first make sure that you put all of these files into the get hub and then event later when you for
+
+70
+00:04:22,170 --> 00:04:24,520
+example change a specific file.
+
+71
+00:04:24,630 --> 00:04:29,940
+For example you may only change main activity class so in that case you only want to commit to the main
+
+72
+00:04:29,940 --> 00:04:30,920
+activity class.
+
+73
+00:04:30,990 --> 00:04:34,320
+You don't have to for example commits the grateful codes.
+
+74
+00:04:34,350 --> 00:04:38,400
+Or maybe the MIF map folder or the driver folder.
+
+75
+00:04:38,400 --> 00:04:41,380
+So here make sure that all of these checkboxes are checked.
+
+76
+00:04:41,640 --> 00:04:47,220
+And later when you don't want it for example a specific file to be committed you just need to uncheck
+
+77
+00:04:47,520 --> 00:04:50,790
+that checkbox of a specific folder or a file.
+
+78
+00:04:50,820 --> 00:04:53,000
+And here we have the commit message remember.
+
+79
+00:04:53,010 --> 00:04:56,950
+So I'm gonna say get Android studio first come.
+
+80
+00:04:57,000 --> 00:04:57,470
+OK.
+
+81
+00:04:57,570 --> 00:04:59,750
+Now let's go ahead and click on.
+
+82
+00:04:59,920 --> 00:05:01,260
+OK.
+
+83
+00:05:01,500 --> 00:05:04,100
+Now it's pushing to get harbormaster.
+
+84
+00:05:04,260 --> 00:05:07,890
+This is going to be our master branch here at the bottom.
+
+85
+00:05:08,190 --> 00:05:12,610
+And if you click on it you can see that background tasks that is being executed.
+
+86
+00:05:13,600 --> 00:05:19,210
+So here we have this message that says successfully shared project and get up.
+
+87
+00:05:19,210 --> 00:05:21,590
+And here we have this link to get Android to you.
+
+88
+00:05:21,590 --> 00:05:22,650
+I'm going to click on it.
+
+89
+00:05:22,690 --> 00:05:26,470
+So here it is our remote repository and get up.
+
+90
+00:05:26,500 --> 00:05:29,580
+This is the name of our repository kids Android studio.
+
+91
+00:05:30,040 --> 00:05:33,990
+And then here these are our Android studio files.
+
+92
+00:05:34,000 --> 00:05:36,570
+You can see here all the cradle files.
+
+93
+00:05:36,640 --> 00:05:40,550
+So inside the app folder for example if you click on it you can see it is fine.
+
+94
+00:05:40,680 --> 00:05:43,060
+RC The source may.
+
+95
+00:05:43,420 --> 00:05:45,700
+And then here you can see the job folder.
+
+96
+00:05:45,730 --> 00:05:50,640
+If I click on it here it is our main main activity that job.
+
+97
+00:05:50,900 --> 00:05:53,600
+And here you can see all the codes here.
+
+98
+00:05:53,780 --> 00:05:56,010
+So everything is working perfectly.
+
+99
+00:05:56,060 --> 00:05:58,260
+So the branch is the master.
+
+100
+00:05:58,580 --> 00:05:59,180
+Right.
+
+101
+00:05:59,480 --> 00:06:03,620
+And let's go ahead and just click on Android studio.
+
+102
+00:06:03,620 --> 00:06:05,200
+So this is our project in.
+
+103
+00:06:05,210 --> 00:06:12,260
+Get up and we could successfully by just adding our accounts to an android studio and then using the
+
+104
+00:06:12,440 --> 00:06:21,050
+vicissitude we could commit our project here and here it is a snapshot of our project on get up.
+
+105
+00:06:21,050 --> 00:06:28,100
+So now if you go back to Andrew Estadio you can see that at the top menu here in say the spot below
+
+106
+00:06:28,100 --> 00:06:28,890
+the start menu.
+
+107
+00:06:28,910 --> 00:06:31,150
+We have some new icons.
+
+108
+00:06:31,220 --> 00:06:33,210
+We have this good section.
+
+109
+00:06:33,500 --> 00:06:38,240
+And the first icon here is to update the project.
+
+110
+00:06:38,240 --> 00:06:41,430
+And the second icon is to commit to our changes.
+
+111
+00:06:41,690 --> 00:06:45,260
+So if we go ahead and click on it now it's going on.
+
+112
+00:06:45,260 --> 00:06:53,710
+Give me the files that are not actually committed in the previous comment or maybe the modified files.
+
+113
+00:06:53,960 --> 00:06:55,700
+So for example if I go ahead.
+
+114
+00:06:55,700 --> 00:07:00,250
+So here when I wanted to close that window it is advised to get.
+
+115
+00:07:00,290 --> 00:07:02,810
+Do you want to add the following file to get.
+
+116
+00:07:02,810 --> 00:07:07,480
+So here this file this vitiates that examen file is added recently.
+
+117
+00:07:07,700 --> 00:07:12,980
+So here we can actually go ahead and at this five this vicious that there is a fight to get up.
+
+118
+00:07:12,980 --> 00:07:13,940
+So I just need to click on.
+
+119
+00:07:13,940 --> 00:07:14,590
+Yes.
+
+120
+00:07:14,630 --> 00:07:19,810
+And now let's say this main activity class let's add a new line of code here inside is uncreate method.
+
+121
+00:07:19,820 --> 00:07:28,970
+So I'm going to say lock that so first we need to specify the TAC comma and then I'm going inside the
+
+122
+00:07:28,970 --> 00:07:32,640
+code to step in here message semicolon.
+
+123
+00:07:32,960 --> 00:07:38,340
+Now if we modify our main activity class now here inside this section I'm going to Caly can come in
+
+124
+00:07:38,350 --> 00:07:45,840
+it does come into icon and here it says that the main activity class here is changed.
+
+125
+00:07:45,950 --> 00:07:46,790
+We can't come in.
+
+126
+00:07:46,790 --> 00:07:53,270
+So here we can see this lock statement that we added to the uncreate Meffert of their main activity
+
+127
+00:07:53,270 --> 00:07:59,380
+class and here inside this section you can see all the files that should be committed.
+
+128
+00:07:59,420 --> 00:08:01,620
+The main activity class should be committed.
+
+129
+00:08:01,760 --> 00:08:05,220
+So it is one added one might one modify it.
+
+130
+00:08:05,240 --> 00:08:09,380
+So now we can go ahead and commit our changes.
+
+131
+00:08:09,380 --> 00:08:14,240
+So that is that when it says one that it is related to these vitiates that exemplified that we added
+
+132
+00:08:14,240 --> 00:08:21,730
+to their staging area so we can go ahead and click on commit so here it says please specify come with
+
+133
+00:08:21,740 --> 00:08:22,150
+message.
+
+134
+00:08:22,160 --> 00:08:27,530
+So that's why I told you that you must specify a message for your Kemet.
+
+135
+00:08:27,590 --> 00:08:32,120
+So I'm going to say main activity and Vizier's
+
+136
+00:08:35,280 --> 00:08:36,820
+exemplified.
+
+137
+00:08:38,180 --> 00:08:40,310
+So for example this is my message.
+
+138
+00:08:40,550 --> 00:08:42,430
+You can name it whatever you want.
+
+139
+00:08:42,500 --> 00:08:46,060
+And here I just need to click on Kermit.
+
+140
+00:08:46,160 --> 00:08:51,270
+So now it has two files committed main activity Rizzi as exemplified committed.
+
+141
+00:08:51,410 --> 00:08:58,580
+So Claymates means that now we have our new snapshot of this project of this gets Android studio project.
+
+142
+00:08:58,580 --> 00:09:06,860
+Now we can go ahead and push this snapshot this commit to the central repository or to the remote repository.
+
+143
+00:09:06,890 --> 00:09:15,200
+This update projects I'm going to click on it and here we have some options we have for example using
+
+144
+00:09:15,260 --> 00:09:18,980
+marriage rebase here it is branch the fall.
+
+145
+00:09:18,990 --> 00:09:21,720
+So we're going to use that Master branch here.
+
+146
+00:09:21,890 --> 00:09:23,700
+We have the stash and Shell.
+
+147
+00:09:23,990 --> 00:09:31,910
+So stash is actually for example we have some unfinished changes in our project and we want to save
+
+148
+00:09:31,910 --> 00:09:32,110
+it.
+
+149
+00:09:32,120 --> 00:09:34,480
+And then for example applied later.
+
+150
+00:09:34,700 --> 00:09:41,000
+So stash helps us to use this feature to apply our unfinished changes later.
+
+151
+00:09:41,000 --> 00:09:44,020
+So just check this check box don't worry about this one here.
+
+152
+00:09:44,300 --> 00:09:46,530
+The branch is going to be difficult.
+
+153
+00:09:46,790 --> 00:09:49,120
+And I just want to go ahead and click on OK.
+
+154
+00:09:49,130 --> 00:09:52,800
+So now it says that all files are up to date.
+
+155
+00:09:52,820 --> 00:09:59,390
+So in order to push our project to the central repository we need to go ahead and click on the commit
+
+156
+00:09:59,450 --> 00:10:00,530
+again here.
+
+157
+00:10:00,560 --> 00:10:02,510
+So it says no changes detected.
+
+158
+00:10:02,540 --> 00:10:03,290
+Right.
+
+159
+00:10:03,290 --> 00:10:08,120
+So I'm going to change something here so I'm just going to copy this line of code and paste it here
+
+160
+00:10:08,120 --> 00:10:12,490
+again and then I'm going to go ahead and click on it.
+
+161
+00:10:12,500 --> 00:10:17,210
+So because we have a new change here I am going to come with my changes here.
+
+162
+00:10:17,240 --> 00:10:24,360
+But if you hover over this button and click on this dropdown we have two other options.
+
+163
+00:10:24,380 --> 00:10:28,570
+We have come out and push we have create patch.
+
+164
+00:10:28,640 --> 00:10:32,900
+So if you go ahead and click on come it and push let's see what happens.
+
+165
+00:10:32,900 --> 00:10:37,060
+So now it's going to add to the project to that master branch.
+
+166
+00:10:37,070 --> 00:10:39,230
+So now we have two committees.
+
+167
+00:10:39,440 --> 00:10:44,100
+This is the previous commit and we had the busiest that exemplified remember.
+
+168
+00:10:44,390 --> 00:10:45,930
+And this is our latest committee.
+
+169
+00:10:45,950 --> 00:10:49,970
+So here in this committee we added a second a lock statement.
+
+170
+00:10:50,130 --> 00:10:50,750
+OK.
+
+171
+00:10:50,990 --> 00:10:58,340
+So now I'm going to select both of these commits and into skilly can push and you can see that it says
+
+172
+00:10:58,340 --> 00:11:03,500
+push successful push to come it's to region master to the master branch.
+
+173
+00:11:03,500 --> 00:11:13,750
+So now if you go ahead so here if you go ahead and open that remote repository get Andrew in studio.
+
+174
+00:11:13,860 --> 00:11:18,420
+Let's go ahead and just refresh this page here.
+
+175
+00:11:18,660 --> 00:11:26,520
+I'm going to go ahead and open the app folder and sarcy main and then up let's get it back go back to
+
+176
+00:11:26,520 --> 00:11:31,410
+main and then click on this Java package and main activity that Java.
+
+177
+00:11:31,410 --> 00:11:35,130
+So here you should see the two lines of code that are added here.
+
+178
+00:11:35,520 --> 00:11:39,900
+And also if you go ahead and click on come it's here.
+
+179
+00:11:39,900 --> 00:11:44,960
+So if I click on get Andrew Android studio here we have free comets right.
+
+180
+00:11:44,970 --> 00:11:48,380
+If you go ahead and click on Kermit's you can see all of these comments here.
+
+181
+00:11:48,510 --> 00:11:50,880
+So here it this is our first comment.
+
+182
+00:11:51,090 --> 00:11:56,090
+We have our second Cometh and we have this one.
+
+183
+00:11:56,210 --> 00:12:00,680
+So our first coming out is actually for 20 minutes ago.
+
+184
+00:12:00,700 --> 00:12:06,830
+Second time it's 12 minutes ago and our latest commit is in three minutes ago.
+
+185
+00:12:06,830 --> 00:12:12,510
+So in our second comment here we only had one line of code one LUGG statement.
+
+186
+00:12:13,100 --> 00:12:20,770
+And if I click on back and here it is our latest coming out here we can see that we have to look statements.
+
+187
+00:12:20,810 --> 00:12:26,870
+So when I say come it I mean different snapshots of the project.
+
+188
+00:12:26,870 --> 00:12:35,300
+So hopefully that makes sense and make sure that you always always use come in all of your projects.
+
+189
+00:12:35,300 --> 00:12:42,590
+It doesn't matter if it is whether it is a practice project or a test project or your complex project.
+
+190
+00:12:42,740 --> 00:12:48,590
+You should always use Get up get and get up and always come into your changes and create snapshots out
+
+191
+00:12:48,590 --> 00:12:55,230
+of your project because you are going to just make the process of the debarking very easy.
+
+192
+00:12:55,280 --> 00:13:02,960
+And we have another way to push our changes to the good repository So for example if I go ahead and
+
+193
+00:13:02,960 --> 00:13:10,520
+copy this line of code here and paste it here so I'm going to change it to my message and here at the
+
+194
+00:13:10,520 --> 00:13:11,110
+top menu.
+
+195
+00:13:11,120 --> 00:13:15,800
+Just go ahead and click on vicis and then he'll go to get.
+
+196
+00:13:15,800 --> 00:13:18,960
+So here we have all of these operations.
+
+197
+00:13:19,100 --> 00:13:23,630
+So we have come to find and we have the reverse option.
+
+198
+00:13:23,690 --> 00:13:25,170
+We have branches.
+
+199
+00:13:25,610 --> 00:13:28,230
+And here we have marriage changes.
+
+200
+00:13:28,340 --> 00:13:31,630
+So here you can see the clone option.
+
+201
+00:13:31,670 --> 00:13:34,730
+We have fetch pool and push.
+
+202
+00:13:34,730 --> 00:13:38,100
+These are the two most important operations that you should know about.
+
+203
+00:13:38,180 --> 00:13:46,610
+And we also have the rebase option and the Create pool request so you can see all of these operations
+
+204
+00:13:46,610 --> 00:13:47,260
+here.
+
+205
+00:13:47,530 --> 00:13:51,980
+But you just literally can't visit as kids and you can have all of these options here.
+
+206
+00:13:52,070 --> 00:13:56,150
+That's really cool about this fetch here.
+
+207
+00:13:56,150 --> 00:13:59,100
+This is just a part of the pool operation.
+
+208
+00:13:59,390 --> 00:14:07,590
+So when you use the pool operation you get the data and then merge it on your for example your master
+
+209
+00:14:07,590 --> 00:14:16,100
+or branch but Fich just gets the data from the server from the central repository.
+
+210
+00:14:16,100 --> 00:14:18,060
+So don't worry about this fetch here.
+
+211
+00:14:18,260 --> 00:14:21,050
+We just need to work on the push and the pool.
+
+212
+00:14:21,050 --> 00:14:28,470
+So now let's go ahead and click on push and here it's going to add to changes to our Master branch.
+
+213
+00:14:28,490 --> 00:14:30,350
+So here it is no come selector.
+
+214
+00:14:30,350 --> 00:14:32,960
+So first we need to commit our changes remember.
+
+215
+00:14:33,170 --> 00:14:40,880
+So here this green icon here and see if I click on it here it says that we have a new commit.
+
+216
+00:14:40,880 --> 00:14:42,470
+We have a new code.
+
+217
+00:14:42,470 --> 00:14:45,710
+It is actually highlighting it in a green color.
+
+218
+00:14:45,710 --> 00:14:52,110
+So here let's actually change this message and say that my first message.
+
+219
+00:14:52,220 --> 00:14:56,120
+And then just go ahead and you can't.
+
+220
+00:14:56,210 --> 00:14:59,760
+You can just click on commit and then push it later.
+
+221
+00:14:59,960 --> 00:15:01,730
+Or you can come commit and push.
+
+222
+00:15:01,760 --> 00:15:08,120
+So I'm going to ask if he can commit and then I need to go ahead and can he can Vizier's kids and then
+
+223
+00:15:08,180 --> 00:15:09,010
+push.
+
+224
+00:15:09,020 --> 00:15:13,260
+So now we have this my first message coming here.
+
+225
+00:15:13,310 --> 00:15:17,270
+This is the snapshot of the project of the fight that is actually changed.
+
+226
+00:15:17,360 --> 00:15:19,790
+And I just need to click on push now.
+
+227
+00:15:19,840 --> 00:15:22,180
+It says that the push is successful.
+
+228
+00:15:22,250 --> 00:15:26,300
+So if you want to you can also go ahead and use the pool operation.
+
+229
+00:15:26,300 --> 00:15:26,950
+So.
+
+230
+00:15:27,070 --> 00:15:27,490
+Yes.
+
+231
+00:15:27,560 --> 00:15:30,310
+And go to get and then click on pool.
+
+232
+00:15:30,350 --> 00:15:32,450
+Now it says here it is that gets route.
+
+233
+00:15:32,480 --> 00:15:36,020
+So this is the address of my project in my computer.
+
+234
+00:15:36,140 --> 00:15:39,230
+Here it is the address of the remote repository.
+
+235
+00:15:39,440 --> 00:15:44,990
+And then it's here it is Raymie the branches to merge that Master branch.
+
+236
+00:15:44,990 --> 00:15:49,490
+And here we have the strategy so don't forget about this one here.
+
+237
+00:15:49,610 --> 00:15:55,190
+You just literally can pool and then it's going to pull the project from the remote repository and it's
+
+238
+00:15:55,190 --> 00:16:01,690
+going to be injected automatically into my project kit and really stood you to this path.
+
+239
+00:16:01,700 --> 00:16:06,310
+So you don't have to worry about anything here and here it says pool operation.
+
+240
+00:16:06,410 --> 00:16:11,330
+So because we have no items here because we haven't changed anything it is already updated.
+
+241
+00:16:11,330 --> 00:16:16,520
+We can also go ahead and play around with these other options for example branches here.
+
+242
+00:16:16,640 --> 00:16:18,850
+You can create a new branch if you want.
+
+243
+00:16:18,920 --> 00:16:21,530
+We have local branches we have remote branches.
+
+244
+00:16:21,530 --> 00:16:24,710
+You already know what to do about these branches.
+
+245
+00:16:24,920 --> 00:16:30,430
+So you just need to go ahead and work on these options and just play around with it a little bit.
+
+246
+00:16:30,670 --> 00:16:37,110
+And because you are you are going to use it in all of your projects from now on.
+
+247
+00:16:37,160 --> 00:16:37,600
+OK.
+
+248
+00:16:37,670 --> 00:16:41,160
+So this is the end of this section of the course.
+
+249
+00:16:41,240 --> 00:16:46,570
+You have learned everything you needed to know about get and get help.
+
+250
+00:16:46,640 --> 00:16:47,820
+Now it's your turn.
+
+251
+00:16:48,200 --> 00:16:55,170
+And again make sure to use good in each and every project that you create.
+
+252
+00:16:55,390 --> 00:16:58,000
+Really your programming projects.
+
+253
+00:16:58,000 --> 00:16:59,910
+So thank you very much for watching.
+
+254
+00:17:00,100 --> 00:17:01,000
+I'll see you next.
